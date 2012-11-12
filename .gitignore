@@ -1,3 +1,7 @@
-target/
+logs
+project/project
+project/target
+target
+tmp
 .idea
 .idea_modules
