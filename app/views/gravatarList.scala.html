@@ -1,0 +1,12 @@
+@(gravatars: List[model.Gravatar])
+
+@main("Gravatar list") {
+
+Your gravatar list (@gravatars.size):
+
+    <ul>
+    @gravatars.map { gravatar =>
+        <li>@gravatar.email</li>
+    }
+    </ul>
+}

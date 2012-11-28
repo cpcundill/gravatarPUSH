@@ -11,7 +11,9 @@ GET     /login                      controllers.Authn.login
 GET     /authenticate               controllers.Authn.authenticate
 GET     /logout                     controllers.Authn.logout
 
+GET     /gravatar/list/*username    controllers.Gravatar.gravatarList(username)
 GET     /gravatar/*email            controllers.Gravatar.gravatarImage(email)
+
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
