@@ -1,11 +1,12 @@
 package controllers
 
 import play.api.mvc._
-import play.db.DB
 import java.security.MessageDigest
-import model.{Gravatar, Gravatars}
+import model.Gravatars
 import scala.slick.driver.H2Driver.simple._
 import Database.threadLocalSession
+import play.api.db.DB
+import play.api.Play.current
 
 
 object Gravatar extends Controller with Secured {
